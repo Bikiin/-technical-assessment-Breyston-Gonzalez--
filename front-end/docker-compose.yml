@@ -7,7 +7,7 @@ services:
         container_name: front-service-dependencies
         working_dir: /app
         volumes:
-            - ./front-end:/app
+            - ./:/app
         command: npm install
 
     front-service-testing:
@@ -15,7 +15,7 @@ services:
         container_name: front-service-testing
         working_dir: /app
         volumes:
-            - ./front-end:/app
+            - ./:/app
         depends_on:
             front-service-dependencies:
                 condition: service_completed_successfully
@@ -26,7 +26,7 @@ services:
         container_name: front-service
         working_dir: /app
         volumes:
-            - ./front-end:/app
+            - ./:/app
         ports:
             - 3000:3000
         depends_on:

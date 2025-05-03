@@ -1,6 +1,6 @@
 {
     "name": "front-service-dev",
-    "dockerComposeFile": ["${localWorkspaceFolder}/../docker-compose.yml"],
+    "dockerComposeFile": ["./docker-compose.yml"],
     "service": "front-service",
     "workspaceFolder": "/app",  
     "customizations": {
