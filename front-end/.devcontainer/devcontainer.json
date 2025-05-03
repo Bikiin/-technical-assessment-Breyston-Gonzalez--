@@ -1,0 +1,11 @@
+{
+    "name": "front-service-dev",
+    "dockerComposeFile": ["${localWorkspaceFolder}/../docker-compose.yml"],
+    "service": "front-service",
+    "workspaceFolder": "/app",  
+    "customizations": {
+        "vscode": {
+          "extensions": ["ms-vscode.vscode-typescript-next"]
+        }
+      }
+}
