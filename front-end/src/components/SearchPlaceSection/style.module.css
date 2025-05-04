@@ -1,0 +1,62 @@
+.ctas {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.ctas button {
+    appearance: none;
+    border-radius: 128px;
+    height: 48px;
+    padding: 0 20px;
+    border: none;
+    border: 1px solid transparent;
+    transition:
+        background 0.2s,
+        color 0.2s,
+        border-color 0.2s;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 500;
+}
+
+.primary {
+    background: var(--foreground);
+    color: var(--background);
+    gap: 8px;
+}
+
+@media (hover: hover) and (pointer: fine) {
+    .primary:hover {
+        background: var(--button-primary-hover);
+        border-color: transparent;
+    }
+}
+
+.ctas button {
+    font-size: 14px;
+    height: 40px;
+    padding: 0 16px;
+}
+
+.ctas input {
+    padding: 10px;
+    border: 1px solid #555;
+    border-radius: 6px;
+    font-size: 1rem;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    outline: none;
+    transition: border 0.2s ease;
+}
+
+.ctas input:focus {
+    border-color: #888;
+}

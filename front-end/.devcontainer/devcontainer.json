@@ -1,11 +1,26 @@
 {
     "name": "front-service-dev",
-    "dockerComposeFile": ["./docker-compose.yml"],
+    "dockerComposeFile": [
+        "../docker-compose.yml"
+    ],
     "service": "front-service",
-    "workspaceFolder": "/app",  
+    "workspaceFolder": "/app",
     "customizations": {
         "vscode": {
-          "extensions": ["ms-vscode.vscode-typescript-next"]
+            "extensions": [
+                "ms-vscode.vscode-typescript-next",
+                "dbaeumer.vscode-eslint"
+            ],
+            "settings": {
+                "editor.formatOnSave": true,
+                "eslint.format.enable": true,
+                "editor.tabSize": 4,
+                "editor.insertSpaces": true,
+                "editor.detectIndentation": true,
+                "editor.codeActionsOnSave": {
+                    "source.fixAll": "always"
+                }
+            }
         }
-      }
+    }
 }
