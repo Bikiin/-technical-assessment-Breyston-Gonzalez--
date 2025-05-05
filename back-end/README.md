@@ -14,7 +14,7 @@ Este proyecto es una **API REST en C# con ASP.NET Core** que permite consultar m
 
 ## ▶️ Ejecución del entorno
 
-Para levandar el entorno se usa el comando:
+Para levantar el entorno se usa el comando:
 
 `docker compose up`
 
@@ -32,7 +32,7 @@ Al iniciar el entorno, se levantan tres contenedores:
 
 ## 🛠️ Migraciones y seed de datos
 
-La ejecusion de la migracion se hace con el siguiente comando en una terminal diferente:
+La ejecución de la migración se hace con el siguiente comando en una terminal diferente:
 
 `docker compose up migrate`
 
