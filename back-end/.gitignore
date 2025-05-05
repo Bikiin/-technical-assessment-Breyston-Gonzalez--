@@ -1,0 +1,53 @@
+# Build artifacts
+bin/
+obj/
+**/bin/
+**/obj/
+
+# User-specific files
+*.user
+*.userosscache
+*.suo
+*.sln.docstates
+
+# VS Code settings
+.vscode/
+
+# Visual Studio settings
+*.vs/
+.vs/
+
+# Dotnet CLI
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# ASP.NET secrets
+secrets.json
+
+# NuGet
+*.nupkg
+.nuget/
+packages/
+*.snupkg
+
+# Logs
+*.log
+
+# Tools
+*.DS_Store
+*.env
+*.swp
+*.swo
+
+# OS junk
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+Migrations/
+
+# Test results
+TestResults/
+*.coverage
+*.trx
