@@ -32,11 +32,11 @@ Al iniciar el entorno, se levantan tres contenedores:
 
 ## 🛠️ Migraciones y seed de datos
 
-La ejecusion de la migracion se hace con el comando:
+La ejecusion de la migracion se hace con el siguiente comando en una terminal diferente:
 
 `docker compose up migrate`
 
-Una vez que el backend se encuentra corriendo y escuchando en el puerto correspondiente, se ejecuta un contenedor aparte llamado `migrate`, que:
+Una vez que el backend se encuentra corriendo y escuchando en el puerto correspondiente, se ejecuta un contenedor aparte llamado `migrate` con `docker compose up migrate`, que:
 
 - Instala `dotnet-ef`
 - Aplica la migración `InitialCreate`
