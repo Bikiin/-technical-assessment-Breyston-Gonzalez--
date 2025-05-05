@@ -23,7 +23,6 @@ services:
         command: sh -c "
                 dotnet tool install -g dotnet-ef 
                 && export PATH=\"\$PATH:/root/.dotnet/tools\"
-                && dotnet ef migrations remove --project CarsApi.csproj
                 && dotnet ef migrations add InitialCreate --project CarsApi.csproj 
                 && dotnet ef database update --project CarsApi.csproj
             "
